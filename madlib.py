@@ -10,6 +10,7 @@ Forget travelling to {} or {} for your summer vacation. Choose Yempton's
 Top Rated holiday get away tour for over {} years. Book your tickets today,
 start at ${}.99!
 """
+
 story2 = """
 {} {} {} is a renowned {} in the field of {}.
 Born in {}, their biggeset contribution to {} was inventing {}.
@@ -43,5 +44,24 @@ who live in {} City.
 
 story5 = """
 In the Wild West, there are many legendary cowboys and outlaws. None compare to
-the person we'll discuss today. This is the ballad of {} {}. Originating and operating out of {}, Texas, {}. Renowned for their record-time {} skills, {} was hard to beat in a duel. With this reputation, {} traveled across the West Coast, winning duel after duel. Records indicate that over the course of over {} duels, {} {} only lost once. Eventually, the duels took their toll and {} allegedly retired to the {} region.
+the person we'll discuss today. This is the ballad of {} {}.
+Originating and operating out of {}, Texas, {}.
+Renowned for their record-time {} skills, {} was hard to beat in a duel.
+With this reputation, {} traveled across the West Coast, winning duel after duel.
+Records indicate that over the course of over {} duels, {} {} only lost once.
+Eventually, the duels took their toll and {} allegedly retired to the {} region.
 """
+
+#Initialize array of stories to choose from and print options
+
+dict_stories = {"Shiptime, Maritime":story1,
+                "The Achievement":story2,
+                "Haunted Horror":story3,
+                "Modern Superhero":story4,
+                "Western Cowboys":story5
+                }
+print("Welcome to Mulligan Madlibs!\nMake your choice from the selections shown.")
+print("-" * 45)
+for x in dict_stories:
+    print(x + "\n")
+                
