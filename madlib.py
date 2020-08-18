@@ -54,14 +54,46 @@ Eventually, the duels took their toll and {} allegedly retired to the {} region.
 
 #Initialize array of stories to choose from and print options
 
-dict_stories = {"Shiptime, Maritime":story1,
-                "The Achievement":story2,
-                "Haunted Horror":story3,
-                "Modern Superhero":story4,
-                "Western Cowboys":story5
+dict_stories = {"Shiptime, Maritime (1)":story1,
+                "The Achievement (2)":story2,
+                "Haunted Horror (3)":story3,
+                "Modern Superhero (4)":story4,
+                "Western Cowboys (5)":story5
                 }
 print("Welcome to Mulligan Madlibs!\nMake your choice from the selections shown.")
 print("-" * 45)
 for x in dict_stories:
     print(x + "\n")
+
+#Capture user selection and construct conditional statements
+preference = input("Enter story selection: ")
+
+choices = ["1", "2", "3", "4", "5"]
+
+if preference == "1":
+    print(dict_stories["Shiptime, Maritime (1)"])
+elif preference == "2":
+    print(dict_stories["The Achievement (2)"])
+elif preference == "3":
+    print(dict_stories["Haunted Horror (3)"])
+elif preference == "4":
+    print(dict_stories["Modern Superhero (4)"])
+elif preference == "5":
+    print(dict_stories["Western Cowboys (5)"])
+else:
+    while preference not in choices:
+        print("Choose valid number entry")
+        preference = input("Enter story selection: ")
+        if preference in choices:
+            if preference == "1":
+                print(dict_stories["Shiptime, Maritime (1)"])
+            elif preference == "2":
+                print(dict_stories["The Achievement (2)"])
+            elif preference == "3":
+                print(dict_stories["Haunted Horror (3)"])
+            elif preference == "4":
+                print(dict_stories["Modern Superhero (4)"])
+            elif preference == "5":
+                print(dict_stories["Western Cowboys (5)"])
+            break
                 
