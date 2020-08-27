@@ -161,3 +161,6 @@ def loop_output():
 #Execute functions
 story_selection()
 print(loop_output())
+
+#Keep printed output open
+input()
